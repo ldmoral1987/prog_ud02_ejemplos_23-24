@@ -1,21 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package bucles;
+
+package com.iestrassierra.bucles;
+
+import java.util.Scanner;
 
 /**
- * Mostrar la tabla de 7 usando una estructura repetitiva for.
- * @author Profesor
+ * Repeticiones con bucle for
+ * 
+ * @author Luis del Moral Martínez
  */
 public class RepetitivaFor {
 
     /**
-     * En esta soluciÃ³n se utiliza la estructura repetitiva for para representar
+     * En esta solució se utiliza la estructura repetitiva for para representar
      * en pantalla la tabla de multiplicar del siete.
      */
     public static void main(String[] args) {
-        // DeclaraciÃ³n e inicializaciÃ³n de variables
+        // Declaración e inicialización de variables
         int numero = 7;
         int contador;
         int resultado = 0;

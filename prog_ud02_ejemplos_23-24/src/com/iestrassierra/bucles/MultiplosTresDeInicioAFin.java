@@ -1,48 +1,47 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package bucles;
+
+package com.iestrassierra.bucles;
 
 import java.util.Scanner;
 
 /**
- *
- * @author luisnavarro
+ * Aplicación múltiplos de 3 (suma todos los múltiplos de 3)
+ * 
+ * @author Luis del Moral Martínez
  */
 public class MultiplosTresDeInicioAFin {
 
     public static void main(String[] args) {
-        // DeclaraciÃ³n de variables
-// ------------------------
+        // Declaración de variables
+        // ------------------------
         Scanner teclado = new Scanner(System.in);
         int inicio, fin;    // Entradas
         int contador;       // contador
         int sumaMultiplos3; // acumulador
 
-// Entrada de datos
-// ----------------
+        // Entrada de datos
+        // ----------------
         System.out.print("Introduzca el inicio: ");
         inicio = teclado.nextInt();
         System.out.print("Introduzca el fin: ");
         fin = teclado.nextInt();
 
-// Procesamiento
-// -------------
+        // Procesamiento
+        // -------------
         contador = inicio;  // Iniciamos contador
         sumaMultiplos3 = 0;  // Iniciamos acumulador
-// Recorremos nÃºmeros desde inicio hasta fin
+        
+        // Recorremos números desde inicio hasta fin
         while (contador <= fin) {
-            if (contador % 3 == 0) // Si alguno es mÃºltiplo de 3, lo sumamos al acumulador (lo "acumulamos")
+            if (contador % 3 == 0) // Si alguno es múltiplo de 3, lo sumamos al acumulador (lo "acumulamos")
             {
                 sumaMultiplos3 += contador;
             }
             contador++;  // Incrementamos el contador que va desde inicio hasta fin
         }
 
-// Salida de resultados
-// --------------------
-        System.out.println("La suma de los mÃºltiplos de 3 entre " + inicio + " y " + fin + " es " + sumaMultiplos3 + ".");
+        // Salida de resultados
+        // --------------------
+        System.out.println("La suma de los múltiplos de 3 entre " + inicio + " y " + fin + " es " + sumaMultiplos3 + ".");
         System.out.println();
     }
 }

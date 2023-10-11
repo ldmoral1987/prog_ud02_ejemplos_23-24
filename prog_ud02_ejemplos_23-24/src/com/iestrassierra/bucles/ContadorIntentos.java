@@ -1,39 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package bucles;
+
+package com.iestrassierra.bucles;
 
 import java.util.Scanner;
 
 /**
- *
- * @author luisnavarro
+ * Aplicaci髇 contador intentos (adivinar un c骴igo)
+ * 
+ * @author Luis del Moral Mart韓ez
  */
 public class ContadorIntentos {
 
     public static void main(String[] args) {
-        // Declaraci贸n de variables
+        // Declaraci髇 de variables
         Scanner teclado = new Scanner(System.in);
-        final int CODIGO = 6767; // Constante que contiene el c贸digo correcto
-        int codigoIntroducido;  // C贸digo introducio por el usuario
-        int numIntentos = 0;      // Contador que representa el n煤mero de intentos
+        final int CODIGO = 6767;  // Constante que contiene el c骴igo correcto
+        int codigoIntroducido;    // C骴igo introducio por el usuario
+        int numIntentos = 0;      // Contador que representa el n鷐ero de intentos
 
-// Entrada de datos
+        // Entrada de datos
         do {
-            System.out.print("Introduzca c贸digo (entre 0 y 9999): ");
+            System.out.print("Introduzca c骴igo (entre 0 y 9999): ");
             codigoIntroducido = teclado.nextInt();
             numIntentos++;
             if (codigoIntroducido != CODIGO) {
-                System.out.println("C贸digo incorrecto.");
+                System.out.println("C骴igo incorrecto.");
             }
-        } while (codigoIntroducido != CODIGO && numIntentos < 3); // Mientras el c贸digo sea incorrecto y no hayamos llegado al l铆mite de intentos
+        } while (codigoIntroducido != CODIGO && numIntentos < 3); // Mientras el c骴igo sea incorrecto y no hayamos llegado al l韒ite de intentos
 
-// Comprobaci贸n de c贸digo correcto
+        // Comprobaci髇 de c骴igo correcto
         if (codigoIntroducido == CODIGO) {
-            System.out.println("C贸digo correcto. Acceso concedido.");
+            System.out.println("C骴igo correcto. Acceso concedido.");
         } else {
-            System.out.println("N煤mero de intentos superado. Acceso bloqueado");
+            System.out.println("N鷐ero de intentos superado. Acceso bloqueado");
         }
 
     }
